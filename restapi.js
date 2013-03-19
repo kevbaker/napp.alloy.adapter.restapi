@@ -138,7 +138,7 @@ function Sync(method, model, opts) {
 				} else {
 					params.error(JSON.parse(_response.responseText), _response.responseText);
 					Ti.API.error('[REST API] DELETE ERROR: ');
-					Ti.API.error(_response);
+					Ti.API.error(JSON.stringify(_response));
 				}
 			});
 			break;
@@ -167,7 +167,7 @@ function Sync(method, model, opts) {
 				} else {
 					params.error(JSON.parse(_response.responseText), _response.responseText);
 					Ti.API.error('[REST API] CREATE ERROR: ');
-					Ti.API.error(_response);
+					Ti.API.error(JSON.stringify(_response));
 				}
 			});
 			break;
@@ -197,7 +197,7 @@ function Sync(method, model, opts) {
 				} else {
 					params.error(JSON.parse(_response.responseText), _response.responseText);
 					Ti.API.error('[REST API] UPDATE ERROR: ');
-					Ti.API.error(_response);
+					Ti.API.error(JSON.stringify(_response));
 				}
 			});
 			break;
@@ -238,7 +238,7 @@ function Sync(method, model, opts) {
 				} else {
 					params.error(JSON.parse(_response.responseText), _response.responseText);
 					Ti.API.error('[REST API] READ ERROR: ');
-					Ti.API.error(_response);
+					Ti.API.error(JSON.stringify(_response));
 				}
 			})
 			break;
